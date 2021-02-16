@@ -1,0 +1,59 @@
+.intro-box {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+    @include mq(sp) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.intro-box-left {
+    text-align: left;
+    &__name {
+        white-space: nowrap;
+        padding: 0 1rem;
+        border-radius: 1rem;
+        display: inline-block;
+        font-size: 2rem;
+        border: 0.2rem solid $color-blue;
+        &--small {
+            font-size: 1.5rem;
+        }
+    }
+}
+.intro-box-right {
+    &__title {
+        @include mq(sp) {
+            display: inline-block;
+            border: 0.1rem solid white;
+            padding: 0.2rem;
+            border-radius: 1rem;
+            font-size: 2rem;
+        }
+        font-size: 2.5rem;
+        font-weight: 100;
+        font-family: 'Lato', sans-serif;
+    }
+    &__detail {
+        @include mq(sp) {
+            display: block;
+            padding: 0.5rem;
+            width: 90%;
+        }
+        font-size: 1.6rem;
+        padding: 2rem;
+    }
+}
+// バブルアニメーション
+.skinBody {
+    background: $color-green;
+}
+.skinBody2 {
+    background: url("http://detarame.moo.jp/sample/img/aw1.png") repeat 0 0;
+}
+.skinBody3 {
+    background: url("http://detarame.moo.jp/sample/img/aw2.png") repeat 0 0;
+}
+.skinFrame {
+    background: url("http://detarame.moo.jp/sample/img/aw3.png") repeat 0 0;
+}

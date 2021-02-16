@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+
+.main-img{
+  background-image: url("../img/watercolor.png");
+  height:80vh ;
+  position: relative;
+  @include mq(sp){
+    height: 100vh;
+  }
+  }
+.main-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+font-family: 'Caveat', cursive;
+  &__txt{
+    font-size: 6.5rem;
+    line-height: 2;
+    @include mq(sp){
+      font-size: 4.5rem;
+    }
+  }
+}
+// メインタイトルアニメーション
+.main-title__txt span{
+  opacity: 0;
+  -webkit-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
+
+}
+

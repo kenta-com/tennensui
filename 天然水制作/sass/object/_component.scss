@@ -1,0 +1,19 @@
+// layoutタイトル
+.section-title{
+  margin:7.5rem 0 7.5rem;
+    text-align: center;
+    line-height: 1.0;
+    font-weight: 100;
+    font-size: 4rem;
+    letter-spacing: 0.05em;
+}
+
+// ボタンを左or右寄せしたいとき
+.btn-box{
+  &--left{
+    text-align: left;
+  }
+  &--rigth{
+    text-align: right;
+  }
+}
