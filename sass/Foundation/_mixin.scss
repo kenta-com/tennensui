@@ -1,0 +1,17 @@
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin container($width:80%) {
+  margin: 0 auto;
+  width: $width;
+  max-width: 1200px;
+}
